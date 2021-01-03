@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" ng-app="">
+<head>
+    <title>simUniverse</title>
+    <meta charset="utf-8">
+    <!-- Viewport so we can change depending on device size -->
+    <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'>
+    <!-- Style sheet lives here -->
+    <link rel="stylesheet" href="style.css"> 
+    <!-- javascript -->
+    <script src="project.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+
+
+<body style="width:100%">
+    <!--Flexbox container-->
+    <div class='container'>
+
+        <div class='left'></div>
+
+        <div class='middle'>
+            <span style="height:50%"></span>
+            <content class='stage'>    
+                <span class="header">planet - &nbsp; 
+                    <div class="name"></div> 
+                </span>
+                    <figure class="ball"></figure><figure class="air"></figure>
+                    <figure class="ball2"></figure>
+                    <figure class="ball3"></figure>
+                    <div class="seed"><p>Click to seed planet</p></div>
+                    <div class="command">
+                        Humans:<br>
+                        Grain:<br>
+                    </div>
+            </content>
+            <span style="height:100%"></span>
+            <footer style="font-family: 'Audiowide', cursive;">Jeremy Ward	&copy;2021 </footer>
+        </div>
+        <div class='right'></div>
+    </div>
+</body>
+
+
+
+
+<script>
+    $(document).ready(function(){
+        $('.seed').click(function() {
+        //$('.seed').hide(); //hide the button
+        $('.seed').fadeTo('slow', 0);
+        $('.command').fadeTo('slow', 1);
+        });
+        var name = namegen(1);
+        var number = Math.floor(Math.random() * 7 + 1);
+        console.log(name[0]);
+        $( '.name' ).append(name + " " + number);
+    });
+</script>
+</html>

@@ -1,0 +1,284 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }  
+.container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: none;
+    padding: 0;
+  }
+.left {
+    display: flex;
+    background-color: black;
+    width: 20%;
+    height: 90%;
+  }
+.middle {
+    background-size: 90%,90%;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    background-color: black;
+    width: 60%;
+    color: white;
+    align-items: center;
+  }
+.right {
+    display: flex;
+    background-color: black;
+    width: 20%;
+    height: 90%;
+  }
+.header {
+    position: relative;
+    top: 10%;
+    left: 120%;
+    content: "";
+    border-width: 12px;
+    border-color: white;
+    border-radius: 15px;
+    display: flex;
+    opacity: 90%;
+    align-items: right;
+    border-radius: 25px;
+    background:rgb(211, 255, 249);
+    padding: 1em;
+    width: 12em;
+    height: 1.4em;
+    color: black;
+    font-family: 'Audiowide', cursive;
+    z-index: 9;
+    font-size: 1.2em;
+    text-align: center;
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 73%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 73%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 73%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+  }
+.seed {
+    position: absolute;
+    top: 160%;
+    left: 20%;
+    border-color: white;
+    border-radius: 15px;
+    display: flex;
+    opacity: 80%;
+    align-items: right;
+    border-radius: 50px;
+    background: rgb(155, 223, 250);
+    padding: 20px;
+    width: 12em;
+    height: 3em;
+    color: black;
+    font-family: 'Audiowide', cursive;
+    z-index: 99;
+    visibility: visible;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
+    background: rgb(122,188,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+
+  }
+  .command {
+    position: absolute;
+    top: 60%;
+    left: 140%;
+    content: "";
+    border-width: 5px;
+    border-color: white;
+    border-radius: 15px;
+    display: flex;
+    opacity: 0%;
+    align-items: right;
+    border-radius: 25px;
+    background: grey;
+    padding: 20px;
+    width: 20em;
+    height: 10em;
+    color: black;
+    font-family: 'Audiowide', cursive;
+    filter: blur(.5px);
+    z-index: 99;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d8e0de+0,aebfbc+22,99afab+33,8ea6a2+50,829d98+67,4e5c5a+82,0e0e0e+100;Grey+3D */
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d8e0de+0,aebfbc+20,8ea6a2+37,829d98+59,8ea6a2+79,0e0e0e+100 */
+background: rgb(216,224,222); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(216,224,222,1) 0%, rgba(174,191,188,1) 20%, rgba(142,166,162,1) 37%, rgba(130,157,152,1) 59%, rgba(142,166,162,1) 79%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(216,224,222,1) 0%,rgba(174,191,188,1) 20%,rgba(142,166,162,1) 37%,rgba(130,157,152,1) 59%,rgba(142,166,162,1) 79%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(216,224,222,1) 0%,rgba(174,191,188,1) 20%,rgba(142,166,162,1) 37%,rgba(130,157,152,1) 59%,rgba(142,166,162,1) 79%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+
+
+  }
+
+.ball {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    filter: blur(1px);
+    -webkit-transform-style: preserve-3d;
+    background: url('3.png') repeat-x;
+    background-size: auto 100%;
+    -webkit-animation: move-map 10s infinite linear;
+    -moz-animation: move-map 10s infinite linear;
+    -o-animation: move-map 10s infinite linear;
+    -ms-animation: move-map 10s infinite linear;
+    animation: move-map 10s infinite linear;
+    opacity: 80%;
+    z-index: 89;
+  }
+  .ball2 {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    filter: blur(1px);
+    -webkit-transform-style: preserve-3d;
+    background: url('4.png') repeat-x;
+    background-size: auto 100%;
+    -webkit-animation: move-map 6s infinite linear;
+    -moz-animation: move-map 6s infinite linear;
+    -o-animation: move-map 6s infinite linear;
+    -ms-animation: move-map 6s infinite linear;
+    animation: move-map 6s infinite linear;
+    opacity: 60%;
+    top:-240%;
+    z-index: 99;
+  }
+  .ball3 {
+    top:-240%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    filter: blur(1px);
+    -webkit-transform-style: preserve-3d;
+    background: url('4.png') repeat-x;
+    background-size: auto 100%;
+    -webkit-animation: move-map 4s infinite linear;
+    -moz-animation: move-map 4s infinite linear;
+    -o-animation: move-map 4s infinite linear;
+    -ms-animation: move-map 4s infinite linear;
+    animation: move-map 4s infinite linear;
+    opacity: 40%;
+    z-index: 99;
+    top:-340%;
+  }
+  
+  .ball:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: -40px 10px 70px 10px rgba(0,0,0,0.5) inset;
+    z-index: 2;
+  }
+  
+  .ball:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-filter: blur(1);
+    opacity: 0.1;
+    background: radial-gradient(circle at 50% 80%, #81e8f6, #76deef 10%, #055194 66%, #062745 100%);
+  }
+  
+  .ball .shadow {
+    
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(f, f, f, 0.4), rgba(f, f, f, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-transform: rotateX(90deg) translateZ(-100px);
+    -moz-transform: rotateX(90deg) translateZ(-100px);
+    -ms-transform: rotateX(90deg) translateZ(-100px);
+    -o-transform: rotateX(90deg) translateZ(-100px);
+    transform: rotateX(90deg) translateZ(-100px);
+    z-index: -1;
+  }
+.air {
+    position: relative;
+    top: -120%;
+    left: -30%;
+    width: 120%;
+    height: 120%;
+    background-color: white;
+    z-index: 99;
+    opacity: 3%;
+    border-radius: 50%;
+    filter: blur(1px);
+  }
+  
+  .stage {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 20px;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    -o-perspective: 1200px;
+    perspective: 1200px;
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective-origin: 50% 50%;
+    -ms-perspective-origin: 50% 50%;
+    -o-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+  }
+  
+  @-moz-keyframes move-map {
+    0% {
+      background-position: -1200px 0; }
+  
+    100% {
+      background-position: 0 0; } }
+  
+  @-webkit-keyframes move-map {
+    0% {
+      background-position: 0 0; }
+    100% {
+      background-position: -1200px 0; }
+  }
+  
+  
+  @-o-keyframes move-map {
+    0% {
+      background-position: -1200px 0; }
+  
+    100% {
+      background-position: 0 0; } }
+  
+  @-ms-keyframes move-map {
+    0% {
+      background-position: -1200px 0; }
+  
+    100% {
+      background-position: 0 0; } }
+  
+  @keyframes move-map {
+    0% {
+      background-position: -1200px 0; }
+  
+    100% {
+      background-position: 0 0; } }
