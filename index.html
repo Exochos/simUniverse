@@ -48,27 +48,26 @@
         $('.air, .header').connections({
             css: {
             border: '5px white',
-            opacity: 0.5
+            opacity: 0.8
                 }
         });
         setInterval(() => {
             $('.moon').animate({
-            left: '+=220%',
-            top: '+=220%',
+            left: '+=210%',
+            top: '+=210%',
             });
-            $('.moon').css('zIndex', 200);
+            $('.moon').css('z-index', 2000);
         }, 700);
         setInterval(() => {
             $('.moon').animate({
-            left: '-=221%',
-            top: '-=221%',
+            left: '-=210%',
+            top: '-=210%',
             });
             $('.moon').css('zIndex', -200)
-        }, 704);
+        }, 700);
 
 
 
-        //$('moon').
         $('.seed').click(function() {
             $('.seed').fadeTo('slow', 0);
             $('.command').fadeTo('slow', 1);
