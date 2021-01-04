@@ -14,13 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 
-
 <body style="width:100%">
     <!--Flexbox container-->
     <div class='container'>
-
         <div class='left'></div>
-
         <div class='middle'>
             <span style="height:50%"></span>
             <content class='stage'>    
@@ -30,6 +27,7 @@
                     <figure class="ball"></figure><figure class="air"></figure>
                     <figure class="ball2"></figure>
                     <figure class="ball3"></figure>
+                    <figure class="moon"><img src="moon.png"></figure>
                     <div class="seed"><p>Click to seed planet</p></div>
                     <div class="command">
                         Humans:<br>
@@ -44,15 +42,32 @@
 </body>
 
 
-
-
 <script>
     $(document).ready(function(){
+        setInterval(() => {
+            $('.moon').animate({
+            left: '+=200%',
+            top: '+=200%',
+            });
+            $('.moon').css('zIndex', 200);
+        }, 600);
+        setInterval(() => {
+            $('.moon').animate({
+            left: '-=200%',
+            top: '-=200%',
+            });
+            $('.moon').css('zIndex', -200)
+        }, 601);
+
+
+
+        //$('moon').
         $('.seed').click(function() {
-        //$('.seed').hide(); //hide the button
-        $('.seed').fadeTo('slow', 0);
-        $('.command').fadeTo('slow', 1);
+            //$('.seed').hide(); //hide the button
+            $('.seed').fadeTo('slow', 0);
+            $('.command').fadeTo('slow', 1);
         });
+
         var name = namegen(1);
         var number = Math.floor(Math.random() * 7 + 1);
         console.log(name[0]);
