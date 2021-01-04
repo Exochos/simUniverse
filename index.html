@@ -10,6 +10,7 @@
     <!-- javascript -->
     <script src="project.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.connections.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
@@ -44,33 +45,37 @@
 
 <script>
     $(document).ready(function(){
+        $('.air, .header').connections({
+            css: {
+            border: '5px white',
+            opacity: 0.5
+                }
+        });
         setInterval(() => {
             $('.moon').animate({
-            left: '+=200%',
-            top: '+=200%',
+            left: '+=220%',
+            top: '+=220%',
             });
             $('.moon').css('zIndex', 200);
-        }, 600);
+        }, 700);
         setInterval(() => {
             $('.moon').animate({
-            left: '-=200%',
-            top: '-=200%',
+            left: '-=221%',
+            top: '-=221%',
             });
             $('.moon').css('zIndex', -200)
-        }, 601);
+        }, 704);
 
 
 
         //$('moon').
         $('.seed').click(function() {
-            //$('.seed').hide(); //hide the button
             $('.seed').fadeTo('slow', 0);
             $('.command').fadeTo('slow', 1);
         });
 
         var name = namegen(1);
-        var number = Math.floor(Math.random() * 7 + 1);
-        console.log(name[0]);
+        var number = Math.floor(Math.random() * 4 + 1);
         $( '.name' ).append(name + " " + number);
     });
 </script>
