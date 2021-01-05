@@ -21,7 +21,8 @@
         <div class='left'></div>
         <div class='middle'>
             <span style="height:50%"></span>
-            <content class='stage'>    
+            <content class='stage'>
+                <span class="date">[insert date]</insert></span>
                 <span class="header">planet - &nbsp; 
                     <div class="name"></div> 
                 </span>
@@ -51,22 +52,16 @@
             opacity: 0.8
                 }
         });
+        $('.air, .date').connections({
+            css: {
+            border: '5px white',
+            opacity: 0.8
+                }
+        });
         setInterval(() => {
-            $('.moon').animate({
-            left: '+=210%',
-            top: '+=210%',
-            });
-            $('.moon').css('z-index', 2000);
-        }, 700);
-        setInterval(() => {
-            $('.moon').animate({
-            left: '-=210%',
-            top: '-=210%',
-            });
-            $('.moon').css('zIndex', -200)
-        }, 700);
-
-
+            $('.moon').animate({left: '200px', top: '200px'}, 800, 'linear');
+            $('.moon').animate({left: '-20px', top: '-20px'}, 800, 'linear');
+        }, 600);
 
         $('.seed').click(function() {
             $('.seed').fadeTo('slow', 0);
